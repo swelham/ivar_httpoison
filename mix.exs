@@ -5,6 +5,8 @@ defmodule IvarHttpoison.Mixfile do
     [app: :ivar_httpoison,
      version: "0.1.0",
      elixir: "~> 1.4",
+     description: description(),
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -25,5 +27,16 @@ defmodule IvarHttpoison.Mixfile do
       {:ex_doc, "~> 0.16", only: :dev},
       {:bypass, "~> 0.6.0", only: :test}
     ]
+  end
+
+  defp description do
+    "An HTTPoison adapter for the Ivar HTTP client"
+  end
+
+  defp package do
+    [name: :ivar,
+     maintainers: ["swelham"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/swelham/ivar_httpoison"}]
   end
 end
