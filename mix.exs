@@ -1,4 +1,4 @@
-defmodule IvarHttpoison.Mixfile do
+defmodule Ivar.Httpoison.Mixfile do
   use Mix.Project
 
   def project do
@@ -34,7 +34,7 @@ defmodule IvarHttpoison.Mixfile do
   end
 
   defp package do
-    [name: :ivar,
+    [name: :ivar_httpoison,
      maintainers: ["swelham"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/swelham/ivar_httpoison"}]
