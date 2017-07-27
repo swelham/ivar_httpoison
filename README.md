@@ -1,19 +1,34 @@
-# IvarHttpoison
+# Ivar HTTPoison
 
-**TODO: Add description**
+An HTTPoison adapter for the Ivar HTTP client
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ivar_httpoison` to your list of dependencies in `mix.exs`:
+Add `ivar_httpoison` to your list of dependencies in `mix.exs`
 
 ```elixir
 def deps do
-  [{:ivar_httpoison, "~> 0.1.0"}]
+  [
+    {:ivar_httpoison, "~> 0.1.0"}
+  ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ivar_httpoison](https://hexdocs.pm/ivar_httpoison).
+And then configure Ivar to use the adapter
 
+```elixir
+config :ivar,
+  adapter: Ivar.HTTPoison
+```
+
+## HTTPoison Config
+
+You can configure any of the HTTPoison options via the `http` config key and these will be passed onto HTTPoison
+
+```elixir
+config :ivar,
+  adapter: Ivar.HTTPoison,
+  http: [
+    timeout : 5_000
+  ]
+```
