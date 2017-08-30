@@ -3,6 +3,8 @@ defmodule Ivar.HTTPoison do
   The `Ivar.HTTPoison` module provides the `HTTPoison` adapter implementation for the `Ivar` HTTP client module.
   """
 
+  @behaviour Ivar.Adapter
+
   @doc """
   This function executes a given `Ivar` request using `HTTPoison`.
   
@@ -10,6 +12,7 @@ defmodule Ivar.HTTPoison do
   
     * `request` - the map containing the request options to send, usually created via `Ivar.new/2`
   """
+  @spec execute(map) :: {:ok, map} | {:error, binary | atom}
   def execute(request) do
     request = prepare_files(request)
 

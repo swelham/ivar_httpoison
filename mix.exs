@@ -20,9 +20,9 @@ defmodule Ivar.Httpoison.Mixfile do
     [
       {:httpoison, "~> 0.11.0"},
       {:idna, "~> 4.0"},
-
+      {:ivar, "~> 0.10.1"},
+      
       # dev/test deps
-      {:ivar, git: "https://github.com/swelham/ivar.git", branch: "adapter-refactor", only: :test},
       {:poison, "~> 3.0", only: :test},
       {:ex_doc, "~> 0.16", only: :dev},
       {:bypass, "~> 0.6.0", only: :test}
