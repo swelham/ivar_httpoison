@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/swelham/ivar_httpoison.svg?branch=master)](https://travis-ci.org/swelham/ivar_httpoison) [![Deps Status](https://beta.hexfaktor.org/badge/all/github/swelham/ivar_httpoison.svg)](https://beta.hexfaktor.org/github/swelham/ivar_httpoison) [![Hex Version](https://img.shields.io/hexpm/v/ivar_httpoison.svg)](https://hex.pm/packages/ivar_httpoison)
+
 # Ivar HTTPoison
 
 An HTTPoison adapter for the Ivar HTTP client
