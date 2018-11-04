@@ -11,7 +11,7 @@ Add `ivar_httpoison` to your list of dependencies in `mix.exs`
 ```elixir
 def deps do
   [
-    {:ivar_httpoison, "~> 0.1.0"}
+    {:ivar_httpoison, "~> 0.2.0"}
   ]
 end
 ```
